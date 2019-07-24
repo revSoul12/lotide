@@ -23,7 +23,7 @@ const eqArrays = function(arr1, arr2) {
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 const eqObjects = function(obj1, obj2) {
-  //isolating obj keys and values in array;
+  
   const obj1Keys = Object.keys(obj1);
   // const obj1Values = Object.values(obj1);
   const obj2Keys = Object.keys(obj2);
@@ -55,7 +55,7 @@ const eqObjects = function(obj1, obj2) {
 
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
-console.log(eqObjects(ab, ba)); // => true
+eqObjects(ab, ba); // => true
 
 const abc = { a: "1", b: "2", c: "3" };
 console.log(eqObjects(ab, abc)); // => false
