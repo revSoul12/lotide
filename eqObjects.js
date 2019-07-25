@@ -24,11 +24,9 @@ const eqArrays = function(arr1, arr2) {
 // Otherwise you get back a big fat false!
 const eqObjects = function(obj1, obj2) {
   
+  //Comparing keys by isolating them into arrays
   const obj1Keys = Object.keys(obj1);
-  // const obj1Values = Object.values(obj1);
-  const obj2Keys = Object.keys(obj2);
-  // const obj2Values =ß Object.values(obj2);
-  
+  const obj2Keys = Object.keys(obj2);  
 
   if (obj1Keys.length !== obj2Keys.length) {
     return false;
@@ -38,6 +36,8 @@ const eqObjects = function(obj1, obj2) {
       return false;
     } 
   }
+
+  //Comparing values
   for (const key of obj1Keys) {
     const v1 = obj1[key];
     const v2 = obj2[key];
