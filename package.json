@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@dlaserna/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Daniel Laserna's Lotide library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/revSoul12/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Daniel Laserna",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/revSoul12/lotide/issues"

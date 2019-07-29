@@ -1,3 +1,4 @@
+/*
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -10,7 +11,6 @@ const eqArrays = function(arr1, arr2) {
   } 
   return true;
   };
-
 
 const eqObjects = function(obj1, obj2) {
   
@@ -41,6 +41,8 @@ const eqObjects = function(obj1, obj2) {
   return true; 
 };
 
+*/
+
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
 
@@ -51,11 +53,14 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
+module.exports = assertObjectsEqual;
 
-//TEST
+/*  TEST CODE
 const ab = { a: '1', b: 2 };
 const ba = { b: 2, a: '1' };
 const abc = { a: '2', b: 3, c: 111 };
 
 assertObjectsEqual(ab, ba);
 assertObjectsEqual(ab, abc);
+
+*/
