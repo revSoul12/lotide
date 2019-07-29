@@ -1,3 +1,4 @@
+/*
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -19,6 +20,9 @@ const assertArraysEqual = function (actual, expected) {
   }
 };
 
+*/
+
+
 const without = function (source, itemsToRemove) {
   let newArr = [];
   for (let i = 0; i < source.length; i++) {
@@ -29,6 +33,12 @@ const without = function (source, itemsToRemove) {
   return newArr;
 };
 
+module.exports = without;
+
+/* TEST CODE
+
 assertArraysEqual (without(["hello", "world", "lighthouse"], ["lighthouse"]), ["hello", "world"]);
 
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
+
+*/

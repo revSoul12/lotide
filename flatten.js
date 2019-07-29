@@ -1,3 +1,4 @@
+/*
 const eqArrays = function (arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -18,6 +19,7 @@ const assertArraysEqual = function (actual, expected) {
     console.log(`⛔️⛔️⛔️ Assertion Failed:  ${actual} !== ${expected}`);
   }
 };
+*/
 
 const flatten = function (arr) {
   let answer = [];
@@ -33,11 +35,9 @@ const flatten = function (arr) {
   return answer;
 }
 
-// //return arr.reduce((a,b) => (a.concat(b)),[]);
-// for (let i = 0; i < arr.length; i++)  {
-//   if(arr.isArray(arr[i])) {
-//     return arr.concat(arr[i]);
-//   }
-// }
+module.exports = flatten;
 
+/* TEST CODE
 console.log(flatten([1, 2, [3, 4]]));
+
+*/

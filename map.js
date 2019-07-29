@@ -1,3 +1,4 @@
+/*
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -18,6 +19,7 @@ const assertArraysEqual = function (arr1, arr2) {
     console.log(`⛔️⛔️⛔️ Assertion Failed:  ${arr1} !== ${arr2}`)
   }
 };
+*/
 
 
 const map = function(array, callback) {
@@ -31,8 +33,14 @@ const map = function(array, callback) {
   return results;
 };
 
+module.exports = map;
+
+/* TEST CODE
+
 const words = ["hello", "world"];
 
 const results1 = map(words, word => word[0]);
 
 assertArraysEqual(results1, ["h", "w"]);
+
+*/

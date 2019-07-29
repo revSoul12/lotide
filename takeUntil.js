@@ -12,6 +12,12 @@ const takeUntil = function(array, callback) {
   }  
 }
 
+module.exports = takeUntil;
+
+/*  TEST CODE
+
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
+
+*/
